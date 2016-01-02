@@ -1,5 +1,5 @@
 {
-  "name": "presentation-builder",
+  "name": "Prestrify.js",
   "description": "",
   "main": "index.js",
   "authors": [
@@ -9,11 +9,9 @@
   "keywords": [
     "web",
     "slides",
-    "web",
-    "presentations",
-    "reveal.js"
+    "presentations"
   ],
-  "homepage": "https://github.com/radpet/presentation-builder",
+  "homepage": "https://github.com/radpet/Prestrify.js",
   "moduleType": [],
   "ignore": [
     "**/.*",
@@ -22,10 +20,9 @@
     "test",
     "tests"
   ],
-  "devDependencies": {},
   "dependencies": {
-    "systemjs": "*",
-    "angular": "angular2#~1.4.8",
-    "reveal.js": "~3.2.0"
+    "system.js": "https://github.com/systemjs/systemjs.git#~0.19.9",
+    "plugin-text": "https://github.com/systemjs/plugin-text.git#~0.0.4",
+    "plugin-css": "https://github.com/systemjs/plugin-css.git#~0.1.20"
   }
 }
