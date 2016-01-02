@@ -1,0 +1,31 @@
+{
+  "name": "presentation-builder",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "Radoslav Petkov"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "web",
+    "slides",
+    "web",
+    "presentations",
+    "reveal.js"
+  ],
+  "homepage": "https://github.com/radpet/presentation-builder",
+  "moduleType": [],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {},
+  "dependencies": {
+    "systemjs": "*",
+    "angular": "angular2#~1.4.8",
+    "reveal.js": "~3.2.0"
+  }
+}

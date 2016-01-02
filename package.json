@@ -1,0 +1,32 @@
+{
+  "name": "presentation-builder",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "gulp": "^3.9.0"
+  },
+  "devDependencies": {
+    "bower": "^1.7.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/radpet/presentation-builder.git"
+  },
+  "keywords": [
+    "web",
+    "slides",
+    "web",
+    "presentations",
+    "reveal.js"
+  ],
+  "author": "Radoslav Petkov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/radpet/presentation-builder/issues"
+  },
+  "homepage": "https://github.com/radpet/presentation-builder#readme"
+}
