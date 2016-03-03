@@ -6,8 +6,11 @@
   "devDependencies": {
     "bower": "^1.7.2",
     "browser-sync": "^2.10.1",
+    "del": "^2.2.0",
     "gulp": "^3.9.0",
     "gulp-concat": "^2.6.0",
+    "gulp-order": "^1.1.1",
+    "gulp-util": "^3.0.7",
     "jasmine-core": "^2.4.1",
     "karma": "^0.13.16",
     "karma-chai-as-promised": "^0.1.2",

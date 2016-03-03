@@ -2,6 +2,10 @@ var gulp = require('gulp');
 var concat = require('gulp-concat');
 var browserSync = require('browser-sync').create();
 var reload = browserSync.reload;
+var order = require('gulp-order');
+var registerBuildSlides = require('./scripts/gulp/build-slides');
+
+registerBuildSlides();
 
 var paths = {
   src: 'src',
@@ -10,7 +14,15 @@ var paths = {
   demo: 'demo'
 };
 
-gulp.task('dev', ['build'], function () {
+var moduleOrder = [
+  '**/prestrify.js',
+  '**/file-loader.js',
+  '**/description-manager.js',
+  '**/engine.js'
+];
+
+
+gulp.task('dev', ['build', 'build-slides'], function () {
 
   browserSync.init({
     server: {
@@ -26,5 +38,5 @@ gulp.task('dev', ['build'], function () {
 });
 
 gulp.task('build', function () {
-  return gulp.src(paths.js).pipe(concat('prestrify.js')).pipe(gulp.dest(paths.build));
+  return gulp.src(paths.js).pipe(order(moduleOrder)).pipe(concat('prestrify.js')).pipe(gulp.dest(paths.build));
 });
